@@ -1585,256 +1585,13 @@ Served asset /application.js - 304 Not Modified (11ms)
 Connecting to database specified by database.yml
 
 
-Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-28 14:34:45 +0200
-Served asset /rails.png - 200 OK (3ms)
-
-
-Started GET "/services/index" for 127.0.0.1 at 2013-06-28 14:34:50 +0200
-Processing by ServicesController#index as HTML
-  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (2.9ms)
-Completed 200 OK in 105ms (Views: 75.1ms | ActiveRecord: 2.4ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 14:34:50 +0200
-Served asset /application.css - 304 Not Modified (5ms)
-
-
-Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 14:34:50 +0200
-Served asset /services.css - 304 Not Modified (3ms)
-
-
-Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:50 +0200
-Served asset /services.js - 304 Not Modified (2ms)
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:50 +0200
-Served asset /jquery.js - 304 Not Modified (4ms)
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:50 +0200
-Served asset /jquery_ujs.js - 304 Not Modified (3ms)
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:50 +0200
-Served asset /application.js - 304 Not Modified (8ms)
-Connecting to database specified by database.yml
-
-
-Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-28 14:43:53 +0200
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-28 14:24:06 +0200
 Served asset /rails.png - 304 Not Modified (2ms)
 
 
-Started GET "/services/index" for 127.0.0.1 at 2013-06-28 14:43:57 +0200
-Processing by ServicesController#index as HTML
-  [1m[36mService Load (0.1ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 76ms (Views: 55.5ms | ActiveRecord: 1.3ms)
+Started GET "/services" for 127.0.0.1 at 2013-06-28 14:24:07 +0200
 
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /application.css - 304 Not Modified (3ms)
-
-
-Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /services.css - 304 Not Modified (4ms)
-
-
-Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /services.js - 304 Not Modified (2ms)
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /jquery.js - 304 Not Modified (4ms)
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /jquery_ujs.js - 304 Not Modified (3ms)
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /application.js - 304 Not Modified (9ms)
-
-
-Started GET "/services/index" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Processing by ServicesController#index as HTML
-  [1m[35mService Load (0.2ms)[0m  SELECT "services".* FROM "services" 
-  Rendered services/index.html.erb within layouts/application (0.5ms)
-Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /application.css - 304 Not Modified (0ms)
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /jquery_ujs.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /services.css - 304 Not Modified (0ms)
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /jquery.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /services.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 14:43:58 +0200
-Served asset /application.js - 304 Not Modified (0ms)
-
-
-Started GET "/services/index" for 127.0.0.1 at 2013-06-28 15:05:30 +0200
-Processing by ServicesController#index as HTML
-  [1m[36mService Load (0.1ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (14.6ms)
-Completed 500 Internal Server Error in 63ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007f89b1c28368>:0x007f89b1c40b98>):
-    3:     <table>
-    4:       <% @services.each do |service|  %>
-    5:         <tr>
-    6:           <td class="name"><%= link_to '#{service.name}', service_path(service)%>
-    7:           </td>
-    8: 
-    9: 
-  app/views/services/index.html.erb:6:in `block in _app_views_services_index_html_erb__578646397997358646_70114684886800'
-  app/views/services/index.html.erb:4:in `each'
-  app/views/services/index.html.erb:4:in `_app_views_services_index_html_erb__578646397997358646_70114684886800'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
-
-
-Started GET "/services/index" for 127.0.0.1 at 2013-06-28 15:13:19 +0200
-Processing by ServicesController#index as HTML
-  [1m[35mService Load (0.2ms)[0m  SELECT "services".* FROM "services" 
-  Rendered services/index.html.erb within layouts/application (9.2ms)
-Completed 500 Internal Server Error in 13ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007f89b1c28368>:0x007f89b49f0c28>):
-    3: 
-    4:       <% @services.each do |service|  %>
-    5:       
-    6:         <%= link_to '#{service.name}', service_path(service)%>
-    7: 
-    8: 
-    9:       <% end  %>
-  app/views/services/index.html.erb:6:in `block in _app_views_services_index_html_erb__578646397997358646_70114708807460'
-  app/views/services/index.html.erb:4:in `each'
-  app/views/services/index.html.erb:4:in `_app_views_services_index_html_erb__578646397997358646_70114708807460'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
-
-
-Started GET "/services/index" for 127.0.0.1 at 2013-06-28 15:13:57 +0200
-Processing by ServicesController#index as HTML
-  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (9.2ms)
-Completed 500 Internal Server Error in 12ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007f89b1c28368>:0x007f89b4adcbf0>):
-    3: 
-    4:       <% @services.each do |service|  %>
-    5:       
-    6:         <% link_to '#{service.name}', service_path(service)%>
-    7: 
-    8: 
-    9:       <% end  %>
-  app/views/services/index.html.erb:6:in `block in _app_views_services_index_html_erb__578646397997358646_70114709290440'
-  app/views/services/index.html.erb:4:in `each'
-  app/views/services/index.html.erb:4:in `_app_views_services_index_html_erb__578646397997358646_70114709290440'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
-Connecting to database specified by database.yml
-
-
-Started GET "/services/index" for 127.0.0.1 at 2013-06-28 15:16:24 +0200
-Processing by ServicesController#index as HTML
-  [1m[36mService Load (0.1ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (9.5ms)
-Completed 500 Internal Server Error in 35ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007f886d365518>:0x007f886d3641e0>):
-    3: 
-    4:       <% @services.each do |service|  %>
-    5:       
-    6:         <% link_to '#{service.name}', service_path(service)%>
-    7: 
-    8: 
-    9:       <% end  %>
-  app/views/services/index.html.erb:6:in `block in _app_views_services_index_html_erb___2663539030028495938_70111939391280'
-  app/views/services/index.html.erb:4:in `each'
-  app/views/services/index.html.erb:4:in `_app_views_services_index_html_erb___2663539030028495938_70111939391280'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
-
-
-Started GET "/services/index" for 127.0.0.1 at 2013-06-28 15:16:30 +0200
-Processing by ServicesController#index as HTML
-  [1m[35mService Load (0.2ms)[0m  SELECT "services".* FROM "services" 
-  Rendered services/index.html.erb within layouts/application (37.7ms)
-Completed 500 Internal Server Error in 40ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007f886d365518>:0x007f886d5c0e70>):
-    3: 
-    4:       <% @services.each do |service|  %>
-    5:       
-    6:         <% link_to '#{service.name}', service_path(service)%>
-    7: 
-    8: 
-    9:       <% end  %>
-  app/views/services/index.html.erb:6:in `block in _app_views_services_index_html_erb___2663539030028495938_70111939391280'
-  app/views/services/index.html.erb:4:in `each'
-  app/views/services/index.html.erb:4:in `_app_views_services_index_html_erb___2663539030028495938_70111939391280'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
-
-
-Started GET "/services/index" for 127.0.0.1 at 2013-06-28 15:16:32 +0200
-Processing by ServicesController#index as HTML
-  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (10.5ms)
-Completed 500 Internal Server Error in 14ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007f886d365518>:0x007f886d12d048>):
-    3: 
-    4:       <% @services.each do |service|  %>
-    5:       
-    6:         <% link_to '#{service.name}', service_path(service)%>
-    7: 
-    8: 
-    9:       <% end  %>
-  app/views/services/index.html.erb:6:in `block in _app_views_services_index_html_erb___2663539030028495938_70111939391280'
-  app/views/services/index.html.erb:4:in `each'
-  app/views/services/index.html.erb:4:in `_app_views_services_index_html_erb___2663539030028495938_70111939391280'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
-
-
-Started GET "/services/index/1" for 127.0.0.1 at 2013-06-28 15:16:35 +0200
-
-ActionController::RoutingError (No route matches [GET] "/services/index/1"):
+ActionController::RoutingError (No route matches [GET] "/services"):
   actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
   railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
@@ -1852,365 +1609,109 @@ ActionController::RoutingError (No route matches [GET] "/services/index/1"):
   rack (1.4.5) lib/rack/content_length.rb:14:in `call'
   railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
   rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
-  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
-  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
-  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  /Users/Cris/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Cris/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Cris/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+  Rendered /Users/Cris/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
 
 
-Started GET "/services/index/1" for 127.0.0.1 at 2013-06-28 15:21:00 +0200
-
-ActionController::RoutingError (No route matches [GET] "/services/index/1"):
-  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
-  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
-  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
-  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
-  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
-  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
-  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
-  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-  rack (1.4.5) lib/rack/lock.rb:15:in `call'
-  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
-  railties (3.2.13) lib/rails/engine.rb:479:in `call'
-  railties (3.2.13) lib/rails/application.rb:223:in `call'
-  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
-  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
-  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
-  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
-  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
-  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:21:04 +0200
-Processing by ServicesController#index as HTML
-  [1m[35mService Load (0.3ms)[0m  SELECT "services".* FROM "services" 
-  Rendered services/index.html.erb within layouts/application (13.6ms)
-Completed 500 Internal Server Error in 18ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007f886d365518>:0x007f886d56b308>):
-    3:       <% @services.each do |service|  %>
-    4:         <li>
-    5:             <ol>
-    6:         <%= link_to '#{service.name}', service %>
-    7:             </ol>
-    8: 
-    9: 
-  app/views/services/index.html.erb:6:in `block in _app_views_services_index_html_erb___2663539030028495938_70111963337100'
-  app/views/services/index.html.erb:3:in `each'
-  app/views/services/index.html.erb:3:in `_app_views_services_index_html_erb___2663539030028495938_70111963337100'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
-
-
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:21:17 +0200
-Processing by ServicesController#index as HTML
-  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (10.0ms)
-Completed 500 Internal Server Error in 13ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007f886d365518>:0x007f886b10e7a8>):
-    3:       <% @services.each do |service|  %>
-    4:         <li>
-    5:             <ol>
-    6:         <%= link_to '#{service.name}', service %>
-    7:             </ol>
-    8: 
-    9: 
-  app/views/services/index.html.erb:6:in `block in _app_views_services_index_html_erb___2663539030028495938_70111963337100'
-  app/views/services/index.html.erb:3:in `each'
-  app/views/services/index.html.erb:3:in `_app_views_services_index_html_erb___2663539030028495938_70111963337100'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.2ms)
-Connecting to database specified by database.yml
-Connecting to database specified by database.yml
-
-
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:23:23 +0200
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 14:24:56 +0200
 Processing by ServicesController#index as HTML
   [1m[36mService Load (0.1ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (11.0ms)
-Completed 500 Internal Server Error in 70ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007ff6297aeac8>:0x007ff6297ebdd8>):
-    3:       <% @services.each do |service|  %>
-    4:         <li>
-    5:             <ol>
-    6:         <%= link_to '#{service.name}', service %>
-    7:             </ol>
-    8: 
-    9: 
-  app/views/services/index.html.erb:6:in `block in _app_views_services_index_html_erb__415109877956855814_70347618558080'
-  app/views/services/index.html.erb:3:in `each'
-  app/views/services/index.html.erb:3:in `_app_views_services_index_html_erb__415109877956855814_70347618558080'
+  Rendered services/index.html.erb within layouts/application (0.7ms)
+Compiled jquery.js  (3ms)  (pid 1102)
+Compiled jquery_ujs.js  (0ms)  (pid 1102)
+Compiled application.js  (33ms)  (pid 1102)
+Completed 200 OK in 124ms (Views: 46.3ms | ActiveRecord: 18.5ms)
 
 
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 14:24:56 +0200
+Served asset /application.css - 200 OK (2ms)
 
 
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:24:05 +0200
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 14:24:56 +0200
+Served asset /services.css - 200 OK (1ms)
+
+
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 14:24:56 +0200
+Served asset /services.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 14:24:56 +0200
+Served asset /jquery.js - 200 OK (25ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 14:24:56 +0200
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 14:24:56 +0200
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 14:34:07 +0200
 Processing by ServicesController#index as HTML
   [1m[35mService Load (0.2ms)[0m  SELECT "services".* FROM "services" 
-  Rendered services/index.html.erb within layouts/application (8.9ms)
-Completed 500 Internal Server Error in 12ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007ff6297aeac8>:0x007ff629cfeaf0>):
-    3:       <% @services.each do |service|  %>
-    4:         <li>
-    5:             <ol>
-    6:         <%= link_to 'PROVA', service %>
-    7:             </ol>
-    8: 
-    9: 
-  app/views/services/index.html.erb:6:in `block in _app_views_services_index_html_erb__415109877956855814_70347620084200'
-  app/views/services/index.html.erb:3:in `each'
-  app/views/services/index.html.erb:3:in `_app_views_services_index_html_erb__415109877956855814_70347620084200'
+  Rendered services/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms)
 
 
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
-
-
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:25:23 +0200
-Processing by ServicesController#index as HTML
-  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (44.3ms)
-Completed 500 Internal Server Error in 47ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007ff6297aeac8>:0x007ff62a91e0b0>):
-    2: 
-    3:       <% @services.each do |service|  %>
-    4:  
-    5:         <%= link_to 'PROVA', service %>
-    6:           
-    7: 
-    8:       <% end  %>
-  app/views/services/index.html.erb:5:in `block in _app_views_services_index_html_erb__415109877956855814_70347626440820'
-  app/views/services/index.html.erb:3:in `each'
-  app/views/services/index.html.erb:3:in `_app_views_services_index_html_erb__415109877956855814_70347626440820'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
-
-
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:25:37 +0200
-Processing by ServicesController#index as HTML
-  [1m[35mService Load (0.2ms)[0m  SELECT "services".* FROM "services" 
-  Rendered services/index.html.erb within layouts/application (9.0ms)
-Completed 500 Internal Server Error in 12ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007ff6297aeac8>:0x007ff629a85a30>):
-    2: 
-    3:       <%= @services.each do |service|  %>
-    4:  
-    5:         <% link_to 'PROVA', service %>
-    6:           
-    7: 
-    8:       <% end  %>
-  app/views/services/index.html.erb:5:in `block in _app_views_services_index_html_erb__415109877956855814_70347618806680'
-  app/views/services/index.html.erb:3:in `each'
-  app/views/services/index.html.erb:3:in `_app_views_services_index_html_erb__415109877956855814_70347618806680'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
-
-
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:25:38 +0200
-Processing by ServicesController#index as HTML
-  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (7.2ms)
-Completed 500 Internal Server Error in 10ms
-
-ActionView::Template::Error (undefined method `service_path' for #<#<Class:0x007ff6297aeac8>:0x007ff629cfd6a0>):
-    2: 
-    3:       <%= @services.each do |service|  %>
-    4:  
-    5:         <% link_to 'PROVA', service %>
-    6:           
-    7: 
-    8:       <% end  %>
-  app/views/services/index.html.erb:5:in `block in _app_views_services_index_html_erb__415109877956855814_70347618806680'
-  app/views/services/index.html.erb:3:in `each'
-  app/views/services/index.html.erb:3:in `_app_views_services_index_html_erb__415109877956855814_70347618806680'
-
-
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
-  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
-
-
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:26:48 +0200
-Processing by ServicesController#index as HTML
-  [1m[35mService Load (0.3ms)[0m  SELECT "services".* FROM "services" 
-  Rendered services/index.html.erb within layouts/application (1.4ms)
-Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 15:26:48 +0200
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 14:34:07 +0200
 Served asset /application.css - 304 Not Modified (5ms)
 
 
-Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 15:26:48 +0200
-Served asset /services.css - 304 Not Modified (5ms)
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 14:34:07 +0200
+Served asset /services.css - 304 Not Modified (0ms)
 
 
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 15:26:48 +0200
-Served asset /jquery.js - 304 Not Modified (7ms)
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:07 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 15:26:48 +0200
-Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:07 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 
-Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 15:26:48 +0200
-Served asset /services.js - 304 Not Modified (2ms)
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:07 +0200
+Served asset /services.js - 304 Not Modified (0ms)
 
 
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 15:26:48 +0200
-Served asset /application.js - 304 Not Modified (46ms)
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:07 +0200
+Served asset /application.js - 304 Not Modified (0ms)
 
 
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:27:22 +0200
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 14:34:09 +0200
 Processing by ServicesController#index as HTML
   [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (1.1ms)
-Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+  Rendered services/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms)
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 15:27:22 +0200
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 14:34:09 +0200
+Served asset /services.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 14:34:09 +0200
 Served asset /application.css - 304 Not Modified (0ms)
 
 
-Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 15:27:22 +0200
-Served asset /services.css - 304 Not Modified (0ms)
-
-
-Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:22 +0200
-Served asset /services.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:22 +0200
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:09 +0200
 Served asset /jquery.js - 304 Not Modified (0ms)
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:22 +0200
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:09 +0200
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:22 +0200
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:09 +0200
 Served asset /application.js - 304 Not Modified (0ms)
 
 
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:27:25 +0200
-Processing by ServicesController#index as HTML
-  [1m[35mService Load (0.3ms)[0m  SELECT "services".* FROM "services" 
-  Rendered services/index.html.erb within layouts/application (0.7ms)
-Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 15:27:25 +0200
-Served asset /services.css - 304 Not Modified (0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 15:27:25 +0200
-Served asset /application.css - 304 Not Modified (0ms)
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:25 +0200
-Served asset /jquery_ujs.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:25 +0200
-Served asset /jquery.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:25 +0200
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 14:34:09 +0200
 Served asset /services.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:25 +0200
-Served asset /application.js - 304 Not Modified (0ms)
-
-
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:27:42 +0200
-Processing by ServicesController#index as HTML
-  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
-  Rendered services/index.html.erb within layouts/application (1.6ms)
-Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:42 +0200
-Served asset /services.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:42 +0200
-Served asset /jquery.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:42 +0200
-Served asset /jquery_ujs.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:42 +0200
-Served asset /application.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 15:27:42 +0200
-Served asset /services.css - 304 Not Modified (0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 15:27:42 +0200
-Served asset /application.css - 304 Not Modified (0ms)
-
-
-Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:27:44 +0200
-Processing by ServicesController#index as HTML
-  [1m[35mService Load (0.2ms)[0m  SELECT "services".* FROM "services" 
-  Rendered services/index.html.erb within layouts/application (0.4ms)
-Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 15:27:44 +0200
-Served asset /services.css - 304 Not Modified (0ms)
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:44 +0200
-Served asset /jquery_ujs.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:44 +0200
-Served asset /application.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:44 +0200
-Served asset /jquery.js - 304 Not Modified (0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 15:27:44 +0200
-Served asset /application.css - 304 Not Modified (0ms)
-
-
-Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 15:27:44 +0200
-Served asset /services.js - 304 Not Modified (0ms)
+<<<<<<< HEAD
 
 
 Started GET "/services/index/" for 127.0.0.1 at 2013-06-28 15:28:25 +0200
@@ -5871,3 +5372,5 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 16:18:54 +0200
 Served asset /services.css - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
+=======
+>>>>>>> 3783c0721ef34773b67762ed138e96d6a3bf569b
