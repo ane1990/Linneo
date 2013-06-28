@@ -1,4 +1,6 @@
 Linneo::Application.routes.draw do
+  get "services/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

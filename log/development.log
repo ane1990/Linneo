@@ -1,0 +1,1584 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-28 11:35:02 +0200
+Served asset /rails.png - 200 OK (17ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateServices (20130628095428)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "services" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "info" text, "faq" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130628095428')[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-28 12:38:55 +0200
+Served asset /rails.png - 304 Not Modified (3ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:39:04 +0200
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT "services".* FROM "services" [0m
+ERROR: compiling _app_views_services_index_html_erb__3692404460710380242_70359286704220 RAISED /Users/albi/Desktop/Linneo/app/views/services/index.html.erb:2: syntax error, unexpected ')', expecting keyword_end
+...ices.each do |s| puts s.name  );@output_buffer.safe_concat('
+...                               ^
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:5: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:7: syntax error, unexpected end-of-input, expecting ')'
+Function body:           def _app_views_services_index_html_erb__3692404460710380242_70359286704220(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "services/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>All Services</h1>
+');@output_buffer.append= ( @services.each do |s| puts s.name  );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__490748527895588123__process_action__2619980167011857385__callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__462092574777821097__call__2659166922905892836__callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered services/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:2: syntax error, unexpected ')', expecting keyword_end
+...ices.each do |s| puts s.name  );@output_buffer.safe_concat('
+...                               ^
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:5: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:7: syntax error, unexpected end-of-input, expecting ')'):
+    1: <h1>All Services</h1>
+    2: <%= @services.each do |s| puts s.name  %>
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.13) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.13) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.13) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__490748527895588123__process_action__2619980167011857385__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__462092574777821097__call__2659166922905892836__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/services/" for 127.0.0.1 at 2013-06-28 12:39:25 +0200
+
+ActionController::RoutingError (No route matches [GET] "/services"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-28 12:39:36 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:39:43 +0200
+Processing by ServicesController#index as HTML
+  [1m[35mService Load (0.3ms)[0m  SELECT "services".* FROM "services" 
+ERROR: compiling _app_views_services_index_html_erb__3692404460710380242_70359286704220 RAISED /Users/albi/Desktop/Linneo/app/views/services/index.html.erb:2: syntax error, unexpected ')', expecting keyword_end
+...ices.each do |s| puts s.name  );@output_buffer.safe_concat('
+...                               ^
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:5: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:7: syntax error, unexpected end-of-input, expecting ')'
+Function body:           def _app_views_services_index_html_erb__3692404460710380242_70359286704220(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "services/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>All Services</h1>
+');@output_buffer.append= ( @services.each do |s| puts s.name  );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__490748527895588123__process_action__2619980167011857385__callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__462092574777821097__call__2659166922905892836__callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered services/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:2: syntax error, unexpected ')', expecting keyword_end
+...ices.each do |s| puts s.name  );@output_buffer.safe_concat('
+...                               ^
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:5: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:7: syntax error, unexpected end-of-input, expecting ')'):
+    1: <h1>All Services</h1>
+    2: <%= @services.each do |s| puts s.name  %>
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.13) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.13) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.13) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__490748527895588123__process_action__2619980167011857385__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__462092574777821097__call__2659166922905892836__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:42:20 +0200
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
+ERROR: compiling _app_views_services_index_html_erb__3692404460710380242_70359318253960 RAISED /Users/albi/Desktop/Linneo/app/views/services/index.html.erb:8: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:10: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_services_index_html_erb__3692404460710380242_70359318253960(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "services/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>All Services</h1>
+');@output_buffer.append=  @services.each do |service|@output_buffer.safe_concat('
+');@output_buffer.safe_concat('<td class="name">
+    ');@output_buffer.append= ( service.name);@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </td>
+
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__490748527895588123__process_action__2619980167011857385__callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__462092574777821097__call__2659166922905892836__callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered services/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:8: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:10: syntax error, unexpected end-of-input, expecting keyword_end):
+    5:     </td>
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.13) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.13) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.13) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__490748527895588123__process_action__2619980167011857385__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__462092574777821097__call__2659166922905892836__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:42:33 +0200
+Processing by ServicesController#index as HTML
+  [1m[35mService Load (0.2ms)[0m  SELECT "services".* FROM "services" 
+ERROR: compiling _app_views_services_index_html_erb__3692404460710380242_70359303202900 RAISED /Users/albi/Desktop/Linneo/app/views/services/index.html.erb:7: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:9: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_services_index_html_erb__3692404460710380242_70359303202900(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "services/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>All Services</h1>
+');@output_buffer.append=  @services.each do |service|@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+    ');@output_buffer.append= ( service.name);@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__490748527895588123__process_action__2619980167011857385__callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__462092574777821097__call__2659166922905892836__callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered services/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:7: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:9: syntax error, unexpected end-of-input, expecting keyword_end):
+    4:     <%= service.name%>
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.13) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.13) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.13) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__490748527895588123__process_action__2619980167011857385__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__462092574777821097__call__2659166922905892836__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:42:51 +0200
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
+  Rendered services/index.html.erb within layouts/application (1.1ms)
+Compiled services.css  (8ms)  (pid 1425)
+Compiled application.css  (13ms)  (pid 1425)
+Compiled jquery.js  (40ms)  (pid 1425)
+Compiled jquery_ujs.js  (0ms)  (pid 1425)
+Compiled services.js  (86ms)  (pid 1425)
+Compiled application.js  (154ms)  (pid 1425)
+Completed 200 OK in 257ms (Views: 256.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 12:42:52 +0200
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 12:42:52 +0200
+Served asset /services.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 12:42:52 +0200
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 12:42:52 +0200
+Served asset /services.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 12:42:52 +0200
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 12:42:52 +0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:44:47 +0200
+Processing by ServicesController#index as HTML
+  [1m[35mService Load (0.3ms)[0m  SELECT "services".* FROM "services" 
+  Rendered services/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 12:44:47 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 12:44:47 +0200
+Served asset /services.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 12:44:47 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 12:44:47 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 12:44:47 +0200
+Served asset /services.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 12:44:47 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:45:07 +0200
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
+  Rendered services/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 12:45:07 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 12:45:07 +0200
+Served asset /services.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 12:45:07 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 12:45:07 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 12:45:07 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 12:45:07 +0200
+Served asset /services.js - 304 Not Modified (0ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:45:51 +0200
+Processing by ServicesController#index as HTML
+  [1m[35mService Load (0.2ms)[0m  SELECT "services".* FROM "services" 
+  Rendered services/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 12:45:51 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 12:45:51 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 12:45:51 +0200
+Served asset /services.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 12:45:51 +0200
+Served asset /services.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 12:45:51 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 12:45:51 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:46:02 +0200
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT "services".* FROM "services" [0m
+  Rendered services/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 12:46:03 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 12:46:03 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 12:46:03 +0200
+Served asset /services.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 12:46:03 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 12:46:03 +0200
+Served asset /services.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 12:46:03 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:46:29 +0200
+Processing by ServicesController#index as HTML
+  [1m[35mService Load (0.4ms)[0m  SELECT "services".* FROM "services" 
+ERROR: compiling _app_views_services_index_html_erb__3692404460710380242_70359294542300 RAISED /Users/albi/Desktop/Linneo/app/views/services/index.html.erb:5: syntax error, unexpected keyword_end
+');@output_buffer.append= ( end);@output_buffer.safe_concat('
+                               ^
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:7: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_services_index_html_erb__3692404460710380242_70359294542300(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "services/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>All Services</h1>
+');@output_buffer.append=  @services.each do |service|@output_buffer.safe_concat('
+');@output_buffer.safe_concat('     ');@output_buffer.append= ( service.name);@output_buffer.safe_concat('
+');@output_buffer.safe_concat('     <br />
+');@output_buffer.append= ( end);@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__490748527895588123__process_action__2619980167011857385__callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__462092574777821097__call__2659166922905892836__callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered services/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:5: syntax error, unexpected keyword_end
+');@output_buffer.append= ( end);@output_buffer.safe_concat('
+                               ^
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:7: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/albi/Desktop/Linneo/app/views/services/index.html.erb:9: syntax error, unexpected keyword_end, expecting ')'):
+    2: <%= @services.each do |service|%>
+    3:      <%= service.name%>
+    4:      <br />
+    5: <%= end%>
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.13) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.13) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.13) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__490748527895588123__process_action__2619980167011857385__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__462092574777821097__call__2659166922905892836__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/albi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/albi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:47:32 +0200
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
+  Rendered services/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 12:47:33 +0200
+Served asset /services.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 12:47:33 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:33 +0200
+Served asset /services.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:33 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:33 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:33 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:47:39 +0200
+Processing by ServicesController#index as HTML
+  [1m[35mService Load (0.2ms)[0m  SELECT "services".* FROM "services" 
+  Rendered services/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 12:47:39 +0200
+Served asset /services.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 12:47:39 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:39 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:39 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:39 +0200
+Served asset /services.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:39 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:47:57 +0200
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (0.2ms)[0m  [1mSELECT "services".* FROM "services" [0m
+  Rendered services/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 12:47:57 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:57 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 12:47:57 +0200
+Served asset /services.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:57 +0200
+Served asset /services.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:57 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 12:47:57 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 12:48:06 +0200
+Processing by ServicesController#index as HTML
+  [1m[35mService Load (0.3ms)[0m  SELECT "services".* FROM "services" 
+  Rendered services/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 12:48:06 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 12:48:06 +0200
+Served asset /services.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 12:48:06 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 12:48:06 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 12:48:06 +0200
+Served asset /services.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 12:48:06 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-06-28 14:21:37 +0200
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/services/index" for 127.0.0.1 at 2013-06-28 14:21:38 +0200
+Processing by ServicesController#index as HTML
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT "services".* FROM "services" [0m
+  Rendered services/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 95ms (Views: 69.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-28 14:21:38 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/services.css?body=1" for 127.0.0.1 at 2013-06-28 14:21:38 +0200
+Served asset /services.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/services.js?body=1" for 127.0.0.1 at 2013-06-28 14:21:38 +0200
+Served asset /services.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-28 14:21:38 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-28 14:21:38 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-28 14:21:38 +0200
+Served asset /application.js - 304 Not Modified (11ms)
