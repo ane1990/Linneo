@@ -1,9 +1,3 @@
 
-
-*log
-
-
-*tmp
-
-
-
+log/*.log
+tmp/**/*
