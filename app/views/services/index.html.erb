@@ -1,5 +1,9 @@
 <h1>All Services</h1>
-<%= @services.each do |service|%>
-     <%=service.name%>
-     <br />
-<%end%>
+<table>
+    <% @services.each do |service| %>
+    <tr>
+        <td> <%= link_to service.name, service%> </td>
+    </tr>
+    <% end %>
+</table>
+
