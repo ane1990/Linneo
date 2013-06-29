@@ -4,7 +4,18 @@
     <%= @service.info %></p>
   <p><h3>FAQ</h3><%= simple_format(@service.faq) %></p>
   
-   <%= link_to "back", services_path()%> 
+ 
+  <% if @service.previous%>
+      <%= link_to "<< Previous Service", @service.previous%>
+  <%end%>
+    <%= link_to "<<Back>>", :back%> 
+  <% if @service.next%>
+  <%= link_to "Next Service>>", @service.next%>
+  <%end%>
+
+
+   
+
  
 
 
