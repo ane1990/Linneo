@@ -1,0 +1,6 @@
+
+log/*.log
+tmp/**/*
+log
+
+log/development.log
