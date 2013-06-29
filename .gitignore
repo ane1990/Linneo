@@ -5,4 +5,4 @@ log
 
 log/development.log
 
-app/.DS_Store
+*.DS_Store
