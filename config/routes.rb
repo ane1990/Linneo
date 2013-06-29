@@ -60,10 +60,10 @@ Linneo::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
     root :to => "home#index"
 
-    get "services/index"
     resources :services 
+
+end
 
 
 
   
-end
