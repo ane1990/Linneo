@@ -5,5 +5,15 @@ body.home {
   background-image:url('bg.png');
 }
 h1.home {
-  color: #ff0000
+  color: #3300cc;
+  position: fixed;
+  top: 100px;
+  left: 150px;
+  font-family: arial;
+  font-size: 44px;
+  font-style: italic;
+  font-weight: bold;
+  font-variant: normal;
+  letter-spacing: 5px;
+  line-height: 20px;
 }
