@@ -1,11 +1,11 @@
-<h1>All Services</h1>
-<%= link_to image_tag("logo.gif", ), home_path() %>
-<table>
+<h1>Services</h1>
+
+<div>
     <% @services.each do |service| %>
-    <tr>
-        <td> <%= link_to service.name, service%> </td>
-    </tr>
+    <p>
+    <%= link_to service.name, service%>
+    </p>
     <% end %>
-</table>
+</div>
 
 

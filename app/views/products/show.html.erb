@@ -1,1 +1,7 @@
-<h1> Product </h1>
+<h1> <%=@product.name%> </h1>
+<p><%= @product.description %> </p>
+<div><% @services.each do |s| %>
+    <p><%= link_to s.name, service_path(s)%></p>
+    <%end%>
+    <p>Designer: <%= link_to @designer.name+" "+@designer.last_name, designer_path()%>
+    

@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  Name: MyString
-  Last_Name: MyString
-  Biography: MyText
+  name: MyString
+  last_name: MyString
+  bio: MyText
+  img_path: MyString
 
 two:
-  Name: MyString
-  Last_Name: MyString
-  Biography: MyText
+  name: MyString
+  last_name: MyString
+  bio: MyText
+  img_path: MyString

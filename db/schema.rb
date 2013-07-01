@@ -10,11 +10,19 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended to check this file into your version control system.
-
-ActiveRecord::Schema.define(:version => 20130701121020) do
+ActiveRecord::Schema.define(:version => 20130701132647) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "designers", :force => true do |t|
+    t.string   "name"
+    t.string   "last_name"
+    t.text     "bio"
+    t.string   "img_path"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

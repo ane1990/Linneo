@@ -1,0 +1,8 @@
+<h1>Designers</h1>
+<div>
+    <% @designers.each do |d| %>
+    <p>
+    <%= link_to d.name+" "+d.last_name, d%>
+    </p>
+    <% end %>
+</div>
