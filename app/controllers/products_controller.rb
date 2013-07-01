@@ -16,6 +16,7 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @services = @product.services.order('name ASC')
     @designer = Designer.find(@product.designer_id)
+    @path = :back
   end
 
 end
