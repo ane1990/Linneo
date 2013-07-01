@@ -12,6 +12,8 @@
   <% if @service.next%>
   <%= link_to "Next Service>>", @service.next%>
   <%end%>
+  
+  <%= link_to "Prodotti per cui è disponibile", products_path(:service_id => @service.id)%>
 
 
    

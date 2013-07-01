@@ -1,5 +1,5 @@
 <h1>Products</h1>
 
 <% @categories.each do |cat| %>
-<p> <%= link_to cat.name, products_path(:range_id => cat.id)%></p>
+<p> <%= link_to cat.name, products_path(:category_id => cat.id)%></p>
 <% end %>
