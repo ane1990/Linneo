@@ -2,6 +2,9 @@ Linneo::Application.routes.draw do
 
 
 
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -60,6 +63,11 @@ Linneo::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
     root :to => "home#index"
     resources :services 
+    resources :categories
+    resources :products  
+
+   
+   
     match 'home/' => "home#index"
 
 end

@@ -2,10 +2,6 @@
 
 one:
   name: MyString
-  range_id: 1
-  description: MyText
 
 two:
   name: MyString
-  range_id: 1
-  description: MyText

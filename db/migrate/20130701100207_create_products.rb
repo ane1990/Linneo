@@ -1,10 +1,9 @@
 class CreateProducts < ActiveRecord::Migration
   def change
     create_table :products do |t|
-      t.string :Name
-      t.text :Description
-      t.string :Range
-      t.string :Designer
+      t.string :name
+      t.integer :range_id
+      t.text :description
 
       t.timestamps
     end
