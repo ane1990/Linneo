@@ -8,8 +8,7 @@
   <% if @service.previous%>
       <%= link_to "<< Previous Service", @service.previous%>
   <%end%>
-    <%= link_to "<<Back to All Services>>", services_path()%> 
-    <%= link_to "<<Back to Product>>", product_path()%> 
+    <%= link_to "<<Back>>", @back%> 
   <% if @service.next%>
   <%= link_to "Next Service>>", @service.next%>
   <%end%>
