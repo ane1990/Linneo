@@ -7,16 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="landmark">    
-<%= link_to "LINNEO", linneo_path()%>
-<%= link_to "PRODUCTS", categories_path()%>    
-<%= link_to "STYLES", styles_path()%>    
-<%= link_to "DESIGNERS", designers_path()%>    
-<%= link_to "SERVICES", services_path()%> 
-<%= link_to "EVENTS", events_path()%>    
-<%= link_to "SHOWROOMS", locations_path()%> 
-<%= link_to "RETAILERS", locations_path()%> 
-
+<div class="landmark">  
+<p><%= link_to "LINNEO", linneo_path()%></p>
+<p><%= link_to "PRODUCTS", categories_path()%></p>   
+<p><%= link_to "STYLES", styles_path()%></p>
+<p><%= link_to "DESIGNERS", designers_path()%></p>   
+<p><%= link_to "SERVICES", services_path()%></p>
+<p><%= link_to "EVENTS", events_path()%></p>
+<p><%= link_to "SHOWROOMS", locations_path()%></p>
+<p><%= link_to "RETAILERS", locations_path()%></p>
 </div>
 
 <%= yield %>

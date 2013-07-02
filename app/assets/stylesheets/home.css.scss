@@ -18,24 +18,4 @@ h1.home {
   line-height: 20px;
 }
 
-div.landmark{
-
-
-a:link {
-  font-family:arial;
-  font-size: 34px;
-  font-weight: bold;
-  color: #FF0000;
-  text-decoration: none;
-  }    /* unvisited link */
-a:hover {
-  background-color:#FFFFF0;
-  text-decoration: underline;
-  font-size: 44px;
-  }   /* mouse over link */
-a:visited{
-  color:#880000;
-}
-a:active {background-color:#FF704D;}  /* selected link */
-}
 
