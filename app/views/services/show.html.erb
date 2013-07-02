@@ -8,7 +8,7 @@
   <% if @service.previous%>
       <%= link_to "<< Previous Service", @service.previous%>
   <%end%>
-    <%= link_to "<<Back>>", @back%> 
+    <%= link_to "<<Back>>", :back%> 
   <% if @service.next%>
   <%= link_to "Next Service>>", @service.next%>
   <%end%>

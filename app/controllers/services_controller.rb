@@ -5,6 +5,5 @@ class ServicesController < ApplicationController
   
   def show 
     @service = Service.find(params[:id])
-    @back = :back
   end
 end
