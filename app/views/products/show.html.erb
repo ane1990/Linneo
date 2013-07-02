@@ -1,5 +1,12 @@
 <h1> <%=@product.name%> </h1>
 <p><%= @product.description %> </p>
+<div class="image" id="product">
+    <p><%= image_tag(@product.image_url_1)%></p>
+    <p><%= image_tag(@product.image_url_2)%></p>
+    <p><%= image_tag(@product.image_url_3)%></p>
+    <p><%= image_tag(@product.image_url_4)%></p>
+                
+</div>
 <div><% @services.each do |s| %>
     <p><%= link_to s.name, service_path(s)%></p>
     <%end%>
