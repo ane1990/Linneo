@@ -1,10 +1,8 @@
 Linneo::Application.routes.draw do
 
+  get "partners/index"
 
-
-
-
-
+  get "locations/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -67,8 +65,15 @@ Linneo::Application.routes.draw do
     resources :categories
     resources :products  
     resources :designers
+<<<<<<< HEAD
    
    
+=======
+    resources :styles
+    resources :events
+    resources :locations
+    resources :partners
+>>>>>>> 37e321ee36a3ed61020a287efbcd8a0afef0137c
     match 'home/' => "home#index"
 
 end
