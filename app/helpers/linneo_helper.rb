@@ -1,0 +1,2 @@
+module LinneoHelper
+end

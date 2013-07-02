@@ -70,8 +70,16 @@ Linneo::Application.routes.draw do
     resources :events
     resources :locations
     resources :partners
+
     match 'admin' => 'admin#index', :via => :get, :as => :admins
     match 'home/' => "home#index"
+
+  match "linneo/" => "linneo#aboutus"
+  get "linneo/contacts"
+  get "linneo/productsandtechs"
+  get "linneo/topevents"
+
+  match 'home/' => "home#index"
 
 end
 

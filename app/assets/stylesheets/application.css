@@ -14,3 +14,26 @@
 body {
   background-image:url('bg2.png');
 }
+
+h1 {
+    font-size: 30px;
+    font-family: verdana, sans-serif;
+}
+
+p.body_page ~ h2 {
+    font-size: 25px;
+}
+
+p.body_page ~ p {
+    font-size: 12px;
+}
+
+*.image_right {
+    float:right;
+}
+
+*.logo {
+    float:left;
+    width: 90px;
+    height: 90px;
+}
