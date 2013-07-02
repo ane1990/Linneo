@@ -1,0 +1,29 @@
+<%= form_for @product do |p|%>
+<p>
+    <%= p.label :name%>
+    <%= p.text_field :name%>
+</p>
+<p>
+     <%= p.label :description%>
+     <%= p.text_area :description%>
+</p>
+<p>
+     <%= p.label 'Categoria'%>
+     <%= collection_select :product, :category_id, @categories, :id, :name%>
+</p>
+<p>
+     <%= p.label 'Designer'%>
+     <%= collection_select :product, :designer_id, @designers, :id, :last_name%>
+ </p>    
+ <p>
+     <%= p.label 'Tipologia'%>
+     <%= collection_select :product, :type_id, @types, :id, :name%>
+</p>
+<p>
+     <%= p.submit %>
+</p>
+     <%end%>
+        
+
+
+    

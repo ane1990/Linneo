@@ -61,19 +61,16 @@ Linneo::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
     root :to => "home#index"
+    get 'admin/' => "admin#index"
     resources :services 
     resources :categories
     resources :products  
     resources :designers
-<<<<<<< HEAD
-   
-   
-=======
     resources :styles
     resources :events
     resources :locations
     resources :partners
->>>>>>> 37e321ee36a3ed61020a287efbcd8a0afef0137c
+    match 'admin' => 'admin#index', :via => :get, :as => :admins
     match 'home/' => "home#index"
 
 end

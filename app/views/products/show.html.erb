@@ -4,6 +4,12 @@
     <p><%= link_to s.name, service_path(s)%></p>
     <%end%>
     <p>Designer: <%= link_to @designer.name+" "+@designer.last_name, designer_path(:designer_id => @product.designer_id)%></p>
-   
-    <p> <%= link_to "Back", @path%></p>
+    <%if @product.next(@product.category_id)%>
+    <p> <%= link_to "Next Product with the same category", @product.next(@product.category_id)%></p>
+    <% end %>
+    <p> <%= link_to "Back to Category Products", products_path(:category_id => @product.category_id)%></p>
+     <%if @product.prev(@product.category_id)%>
+    <p> <%= link_to "Previous Product with the same category", @product.prev(@product.category_id)%></p>
+    <%end%>
+
 

@@ -1,4 +1,11 @@
 <h1>Designer</h1>
     <h2><%= @designer.name+" "+@designer.last_name%></h2>
     <p> <%= @designer.bio %> </p>
+      <% if @designer.previous%>
+      <%= link_to "<< Previous Designer", @designer.previous%>
+      <%end%>
+    <%= link_to "<<Back to All Designers>>", designers_path()%> 
+  <% if @designer.next%>
+  <%= link_to "Next Designer>>", @designer.next%>
+  <%end%>
     <p><%= link_to "Prodotti del designer", products_path(:designer_id => @designer.id) %></p>

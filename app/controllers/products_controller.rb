@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @types = Type.order('name ASC').all
+    @types = Type.all
     if params[:category_id]
       @category = Category.find(params[:category_id])
       @products = @category.products.order('name ASC')
@@ -17,7 +17,18 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @services = @product.services.order('name ASC')
     @designer = Designer.find(@product.designer_id)
-    @path = :back
+  end
+  
+  def new 
+    @product = Product.new
+    @categories = Category.all
+    @designers = Designer.all
+    @types = Type.all
+  end
+  
+  def create
+    Product.create(params[:product])
+    redirect_to admins_path
   end
 
 end
