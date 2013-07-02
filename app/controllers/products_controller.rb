@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   def index
+    @types = Type.order('name ASC').all
     if params[:category_id]
       @category = Category.find(params[:category_id])
       @products = @category.products.order('name ASC')

@@ -3,7 +3,7 @@
 <div><% @services.each do |s| %>
     <p><%= link_to s.name, service_path(s)%></p>
     <%end%>
-    <p>Designer: <%= link_to @designer.name+" "+@designer.last_name, designer_path()%></p>
+    <p>Designer: <%= link_to @designer.name+" "+@designer.last_name, designer_path(:designer_id => @product.designer_id)%></p>
    
     <p> <%= link_to "Back", @path%></p>
 
