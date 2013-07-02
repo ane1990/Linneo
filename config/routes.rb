@@ -65,16 +65,17 @@ Linneo::Application.routes.draw do
     resources :categories
     resources :products  
     resources :designers
-<<<<<<< HEAD
-   
-   
-=======
     resources :styles
     resources :events
     resources :locations
     resources :partners
->>>>>>> 37e321ee36a3ed61020a287efbcd8a0afef0137c
-    match 'home/' => "home#index"
+
+  match "linneo/" => "linneo#aboutus"
+  get "linneo/contacts"
+  get "linneo/productsandtechs"
+  get "linneo/topevents"
+
+  match 'home/' => "home#index"
 
 end
 
