@@ -1,38 +1,46 @@
 <div class="image" id="designer">
 	<% if @designer.img_path != nil %>
-	<p><%= image_tag("/images/#{@designer.img_path}", :class => "designer")%></p>
+	<p>
+		<%= image_tag("/images/#{@designer.img_path}", :class => "designer")%>
+	</p>
 	<%end%>
 </div>
 
 <h1>Designer</h1>
 
 <h2><%= @designer.name+" "+@designer.last_name%></h2>
+
 <div class="right_column">
 	<p>
 		<%= @designer.bio %>
 	</p>
-
-	<div class="image">
+	<div class="image_d">
 		<% if @designer.product_path != nil %>
-		<p>
-			<%= image_tag("/images/#{@designer.product_path}", size: "200x200")%> <%= @designer.product_description %>
-		</p>
+		<table>
+			<tr>
+				<td><%= image_tag("/images/#{@designer.product_path}", size: "200x200")%></td>
+				<td><%= @designer.product_description %></td>
+			</tr>
+		</table>
 		<%end%>
 	</div>
 
-	<% if @designer.previous%>
-	<%= link_to "<< Previous Designer", @designer.previous%>
-	<%end%>
+	<div class="No_implementati">
+		<span> "Ipotetici link degli stili (non implementati)" </span>
+		<span> "Ipotetici link degli eventi (non implementati)" </span>
+	</div>
 
-	<%= link_to "<
-	<Back to All Designers>
-		>", designers_path()%>
+	<span class = "transition">
+		<%= link_to "Prodotti del designer", products_path(:designer_id => @designer.id) %>
+	</span>
 
+	<span class="group_link">
 		<% if @designer.next%>
-		<%= link_to "Next Designer>>", @designer.next%>
+			<%= link_to "Next Designer>>", @designer.next%>
 		<%end%>
-
-		<p>
-			<%= link_to "Prodotti del designer", products_path(:designer_id => @designer.id) %>
-		</p>
+		<%= link_to "<<Back to All Designers>>", designers_path()%>
+		<% if @designer.previous%>
+			<%= link_to "<< Previous Designer", @designer.previous%>
+		<%end%>
+	</span>
 </div>
