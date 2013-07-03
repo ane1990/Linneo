@@ -1,8 +1,28 @@
 <body class="home">
-<h1 class="home">FILL YOUR SPACE</h1>
+    <style>
+    div.landmark{
+        float:left;
+}
+    
 
-<%= image_tag("logo.gif")%>
-<%= link_to "PARTNERS", partners_path()%>
-<%= link_to ">>>Admin<<<", admin_path()%>
+a:link {
+  font-family:arial;
+  font-size: 34px;
+  font-weight: bold;
+  color: #da0202;
+  text-decoration: none;
+  }    /* unvisited link */
+
+a:visited{
+  color:#880000;
+}
+
+a:hover {
+  color: #FF0000;
+}   /* mouse over link */
+</style>
+<h1 class="home">FILL YOUR SPACE</h1>
+<p><%= link_to "PARTNERS", partners_path()%></p>
+<p></p><%= link_to ">>>Admin<<<", admin_path()%></p>
 </body>
 

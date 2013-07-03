@@ -31,19 +31,18 @@ a:link {
   font-family:arial;
   font-size: 34px;
   font-weight: bold;
-  color: #FF0000;
+  color: #555555;
   text-decoration: none;
   }    /* unvisited link */
-a:hover {
-  background-color:#FFFFF0;
-  text-decoration: underline;
-  font-size: 44px;
-  }   /* mouse over link */
+
 a:visited{
-  color:#880000;
+  color:#000000;
 }
-a:active {background-color:#FF704D;}  /* selected link */
-}
+
+a:hover {
+  color: #A8A7A9;
+  }   /* mouse over link */
+
 
 p.body_page ~ h2 {
     font-size: 25px;
