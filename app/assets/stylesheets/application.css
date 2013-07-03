@@ -23,7 +23,12 @@ h1 {
 
 
 div.landmark{
-        float:left;
+    float:left;
+}
+
+div.right_column{
+    float:left;
+    margin:auto;
 }
     
 
@@ -42,15 +47,6 @@ a:visited{
 a:hover {
   color: #A8A7A9;
   }   /* mouse over link */
-
-
-p.body_page ~ h2 {
-    font-size: 25px;
-}
-
-p.body_page ~ p {
-    font-size: 12px;
-}
 
 *.image_right {
     float:right;
