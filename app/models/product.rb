@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
-  attr_accessible :description, :name, :category_id, :designer_id, :type_id
+  attr_accessible :description, :name, :category_id, :designer_id, :type_id, :image_url_1, :image_url_2, :image_url_3, :image_url_4
   belongs_to :category
   has_and_belongs_to_many :services
   belongs_to :designer

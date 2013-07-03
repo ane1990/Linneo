@@ -1,5 +1,5 @@
 class Designer < ActiveRecord::Base
-  attr_accessible :bio, :img_path, :last_name, :name
+  attr_accessible :bio, :img_path, :last_name, :name, :product_path, :product_description
   has_many :products
   
     def previous

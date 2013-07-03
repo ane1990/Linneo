@@ -1,17 +1,30 @@
 <%= form_for @designer do |d|%>
 <p>
-    <%= d.label :name%>
-    <%= d.text_field :name%>
+    <%= d.label 'Nome' %>
+    <%= d.text_field :name %>
 </p>
 <p>
-    <%= d.label :last_name%>
-    <%= d.text_field :last_name%>
+    <%= d.label 'Cognome' %>
+    <%= d.text_field :last_name %>
 </p>
 <p>
-     <%= d.label :bio%>
-     <%= d.text_area :bio%>
+     <%= d.label 'Biografia' %>
+     <%= d.text_area :bio %>
+</p>
+<p>
+	<%= d.label 'Foto' %>
+	<%= d.file_field :img_path %>
+</p>
+<p>
+	<%= d.label 'Foto prodotto di successo' %>
+	<%= d.file_field :product_path %>
+</p>
+<p>
+     <%= d.label 'Descrizione prodotto di successo' %>
+     <%= d.text_area :product_description %>
 </p>
 <p>
      <%= d.submit %>
 </p>
-     <%end%>
+     
+     <% end %>

@@ -1,29 +1,42 @@
 <%= form_for @product do |p|%>
 <p>
-    <%= p.label :name%>
-    <%= p.text_field :name%>
+	<%= p.label 'Nome'%>
+	<%= p.text_field :name%>
 </p>
 <p>
-     <%= p.label :description%>
-     <%= p.text_area :description%>
+	<%= p.label 'Descrizione'%>
+	<%= p.text_area :description%>
 </p>
 <p>
-     <%= p.label 'Categoria'%>
-     <%= collection_select :product, :category_id, @categories, :id, :name%>
+	<%= p.label 'Categoria'%>
+	<%= collection_select :product, :category_id, @categories, :id, :name%>
 </p>
 <p>
-     <%= p.label 'Designer'%>
-     <%= collection_select :product, :designer_id, @designers, :id, :last_name%>
- </p>    
- <p>
-     <%= p.label 'Tipologia'%>
-     <%= collection_select :product, :type_id, @types, :id, :name%>
+	<%= p.label 'Designer'%>
+	<%= collection_select :product, :designer_id, @designers, :id, :last_name%>
 </p>
 <p>
-     <%= p.submit %>
+	<%= p.label 'Tipologia'%>
+	<%= collection_select :product, :type_id, @types, :id, :name%>
 </p>
-     <%end%>
-        
+<p>
+	<%= p.label 'Immagine 1' %>
+	<%= p.file_field :image_url_1 %>
+</p>
+<p>
+	<%= p.label 'Immagine 2' %>
+	<%= p.file_field :image_url_2 %>
+</p>
+<p>
+	<%= p.label 'Immagine 3' %>
+	<%= p.file_field :image_url_3 %>
+</p>
+<p>
+	<%= p.label 'Immagine 4' %>
+	<%= p.file_field :image_url_4 %>
+</p>
+<p>
+	<%= p.submit %>
+</p>
+<%end%>
 
-
-    

@@ -6,13 +6,13 @@
     
     <div class="image" id="designer">
     	<% if @designer.img_path != nil %>
-    	<p><%= image_tag(@designer.img_path)%></p>
+    	<p><%= image_tag("/images/#{@designer.img_path}")%></p>
     	<%end%>
 	</div>
 	
 	 <div class="image">
     	<% if @designer.product_path != nil %>
-    	<p><%= image_tag(@designer.product_path)%> <%= @designer.product_description %></p>
+    	<p><%= image_tag("/images/#{@designer.product_path}")%> <%= @designer.product_description %></p>
     	<%end%>
 	</div>
       
