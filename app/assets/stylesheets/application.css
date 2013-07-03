@@ -16,16 +16,18 @@ body {
   background-attachment: fixed;
 }
 
+* {
+	font-family; Georgia, serif; 
+}
+
 h1 {
     font-size: 2.9em;
-    font-family: Georgia, serif;
     text-align: center;
     color: #cc0000;
 }
 
 h2 {
 	font-size: 1.5em;
-	font-family: Georgia, serif;
 	text-transform: uppercase;
     position: relative;
     left: 1.5em;
@@ -51,57 +53,51 @@ div.right_column{
 }
 
 .transition a:link {
-	font-size: 1.3em;
-	font-family: Georgia, serif;
-	color: #555555;
-	text-decoration: none;
 	margin-top: 1em;
+	font-size: 1.3em;
+	color: #333333;
+	float: left;
+	text-decoration: none;
 }
 
 .transition a:visited{
-  color:#000000;
+	color: #333333;
 }
 
 .transition a:hover {
-  color: #A8A7A9;
+  color: #666666;
   }   /* mouse over link */
 
 .group_link a:link {
 	font-size: 1.1em;
-	font-family: Georgia, serif;
-	color: #555555;
+	color: #333333;
 	float: right;
 	text-decoration: none;
-	margin-top: 1em;
+	margin-top: 1.8em;
 }
 
 .group_link a:visited{
-  color:#000000;
+  color: #333333;
 }
 
 .group_link a:hover {
-  color: #A8A7A9;
+  color: #666666;
   }   /* mouse over link */
  
 .landmark a:link {
-  font-family:arial;
-  font-size: 1.8em;
+  font-size: 1.7em;
   font-weight: bold;
-  color: #555555;
+  color: #000000;
   text-decoration: none;
   }    /* unvisited link */
 
 .landmark a:visited{
-  color:#000000;
+  color: #000000;
 }
 
 .landmark a:hover {
-  color: #A8A7A9;
+  color: #666666;
   }   /* mouse over link */
-
-*.image_right {
-    float:right;
-}
 
 *.logo {
     float:left;

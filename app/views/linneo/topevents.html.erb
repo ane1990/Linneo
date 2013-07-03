@@ -1,28 +1,37 @@
-<head>
-  <title>Linneo - Top Events</title>
-</head>
+<style type = "text/css" media = "all">
+		div.right_column {
+   			 text-indent: 0em;
+   			 margin-top: 1.8em;
+		}
+		
+		.cella {
+			padding-left: 1em;
+			text-align: center;
+		}
+	</style>
 
-<body>
 <h1>Linneo</h1>
-<div class="linneo_landmark">
-  <%= link_to 'About Us', linneo_path() %>
-  <%= link_to 'Contacts', 'contacts' %>
-  <%= link_to 'Major Products and Techniques', 'productsandtechs' %>
-  <%= link_to 'PARTNERS', partners_path() %>
-</div>
-<h2>Top Events</h2>
-<br />
-<table>
-  <tr>
-    <td><%= image_tag("salonemobile.gif", :height => 200, :width => 270) %></td>
-    <td>Protagonista al Salone del Mobile 2012<br />
-      Milano</td>
-  </tr>
-  <tr>
-    <td><%= image_tag("tendence.jpg", :height => 200, :width => 270) %></td>
-    <td>Rappresentante del Made In Italy al Tendence<br />
-      Francoforte</td>
 
-  </tr>
-</table>
-</body>
+<div class="linneo_landmark">
+  <%= link_to 'PARTNERS', partners_path() %>
+  <%= link_to 'Major Products and Techniques', 'productsandtechs' %>
+  <%= link_to 'Contacts', 'contacts' %>
+  <%= link_to 'About Us', linneo_path() %>
+</div>
+
+<h2>Top Events</h2>
+
+<div class = "right_column">
+	<table>
+	  <tr>
+	    <td><%= image_tag("salonemobile.gif", :height => 180, :width => 250) %></td>
+	    <td class = "cella">Protagonista al Salone del Mobile 2012<br/>
+	    Milano</td>
+	  </tr>
+	  <tr>
+	    <td><%= image_tag("tendence.jpg", :height => 180, :width => 250) %></td>
+	    <td class = "cella">Rappresentante del Made In Italy al Tendence<br/>
+	    Francoforte</td>
+	  </tr>
+	</table>
+</div>

@@ -2,6 +2,6 @@
 
 <div class="right_column">
 <% @categories.each do |cat| %>
-<p> <%= link_to cat.name, products_path(:category_id => cat.id)%></p>
+<p class="transition"> <%= link_to cat.name, products_path(:category_id => cat.id)%></p>
 <% end %>
 </div>

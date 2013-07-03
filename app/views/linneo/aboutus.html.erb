@@ -1,23 +1,25 @@
-<head>
-  <title>Linneo - L'Azienda</title>
-</head>
+<h1>Linneo</h1>
 
-<body>
-    <%= image_tag('logo.gif', :class => 'logo') %>
-    <h1>Linneo</h1>
-    <div class="linneo_landmark">
-      <%= link_to 'Contacts', 'linneo/contacts' %>
-      <%= link_to 'Major Products and Techniques', 'linneo/productsandtechs' %>
-      <%= link_to 'Top Events', 'linneo/topevents' %>
-      <%= link_to 'PARTNERS', partners_path() %>
-    </div>
-    <p class="body_page">
-    <h2>L'Azienda</h2>
-    <p>Perfezione e armonia nelle proporzioni e sapore di lusso sono il segno di riconoscimento di Linneo, una dinamica e vivace azienda che da conduzione familiare, si è espansa fino ad avere varie filiali in tutta Italia.</p>
-    <br />
-    <%= image_tag("linneo_l'azienda.png", :title => 'La sede della Linneo', :class => 'image_right') %>
-    <p>Dai primi anni ‘70 a oggi, l’azienda traccia un preciso percorso, instaurando un intenso dialogo con la contemporaneità e diventando uno dei punti di riferimento nel panorama del design.</p>
-    <br />
-    <p>Negli anni viene sviluppata un’offerta articolata, che dai soli divani, si è evoluta arrivando progressivamente a completare perfettamente il soggiorno, che ruota intorno al sistema imbottito dalle forme e volumetrie discrete, intorno a cui sono proposti dei complementi dal segno più forte - sedie, poltroncine, tavoli, tavolini e librerie - che si adattano e definiscono ogni ambiente, da quelli più essenziali e rigorosi a quelli più eclettici e decorativi.</p>
-    </p>
-</body>
+<span class="linneo_landmark">
+	 <%= link_to "PARTNERS", partners_path() %>
+	 <%= link_to "Top Events", 'linneo/topevents' %>
+	 <%= link_to "Major Products and Techniques", 'linneo/productsandtechs' %>
+	 <%= link_to "Contacts", 'linneo/contacts' %>
+</span>
+
+<h2>L'Azienda</h2>
+
+<div class="right_column">
+	<p>
+		Perfezione e armonia nelle proporzioni e sapore di lusso sono il segno di riconoscimento di Linneo, una dinamica e vivace azienda che da conduzione familiare, si è espansa fino ad avere varie filiali in tutta Italia.
+	</p>
+	<br/>
+	<%= image_tag("linneo_l'azienda.png", :title => 'La sede della Linneo', :class => 'image_right') %>
+	<p>
+		Dai primi anni ‘70 a oggi, l’azienda traccia un preciso percorso, instaurando un intenso dialogo con la contemporaneità e diventando uno dei punti di riferimento nel panorama del design.
+	</p>
+	<br/>
+	<p>
+		Negli anni viene sviluppata un’offerta articolata, che dai soli divani, si è evoluta arrivando progressivamente a completare perfettamente il soggiorno, che ruota intorno al sistema imbottito dalle forme e volumetrie discrete, intorno a cui sono proposti dei complementi dal segno più forte - sedie, poltroncine, tavoli, tavolini e librerie - che si adattano e definiscono ogni ambiente, da quelli più essenziali e rigorosi a quelli più eclettici e decorativi.
+	</p>
+</div>

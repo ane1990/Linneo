@@ -2,17 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div.linneo_landmark {
-  font-family: arial;
-  font-size: 18px;
-  }
-
-div.linneo_landmark a:link {
-  color: #ff0000;
-  font-weight: bold;
+.linneo_landmark a:link {
+  margin-top: 1em;
+  font-size: 1.3em;
+  color: #333333;
+  float: right;
+  text-decoration: none;
+  margin-right: 0.8em;
+  margin-left: 0.4em;
 }
 
-div.linneo_landmark  a:visited {
-  color: #3300cc;
-  font-style: italic;
+.linneo_landmark a:visited{
+  color: #333333;
+}
+
+.linneo_landmark a:hover {
+  color: #666666;
+}   /* mouse over link */
+
+*.image_right {
+    float: right;
+    margin-left: 1.7em;
+    height: 17em;
 }

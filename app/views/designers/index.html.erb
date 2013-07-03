@@ -1,7 +1,7 @@
 <h1>Designers</h1>
 <div class = "right_column">
     <% @designers.each do |d| %>
-    <p>
+    <p class = "transition">
     <%= link_to d.name+" "+d.last_name, d%>
     </p>
     <% end %>
