@@ -2,59 +2,60 @@
      body{
      background-image:url('/assets/bg.png');
      background-attachment: fixed;
+     background-repeat:no-repeat;
 }
 div.landmark{
     position:fixed;
-    top:60px;
-    right:80px;
+    top:3.75em;
+    right:8em;
 }
     /*Linneo*/
     p:nth-child(2) {
     position: fixed;
-    top: 180px;
-    right: 480px;
+    top: 12em;
+    right: 30em;
     }
     /*Product*/
     p:nth-child(3) {
     position: fixed;
-    top: 230px;
-    right: 610px;
+    top: 16em;
+    right: 36em;
     }
     /*Styles*/
     p:nth-child(4) {
     position: fixed;
     top: 19em;
-    right: 25em;
+    right: 23em;
     }
     /*Designers*/
     p:nth-child(5) {
     position: fixed;
-    top: 20em;
-    right: 35em;
+    top: 22em;
+    right: 34em;
     }
     /*Services*/
     p:nth-child(6) {
     position: fixed;
-    top: 300px;
-    right: 400px;
+    top: 27em;
+    right: 22em;
     }
     /*Events*/
     p:nth-child(7) {
     position: fixed;
-    top: 30px;
-    right: 740px;
+    top: 27em;
+    right: 40em;
     }
     /*Showroom*/
     p:nth-child(8) {
     position: fixed;
-    top: 30px;
-    right: 400px;
+    top: 33em;
+    right:22em;
     }
     /*Retailers*/
     p:nth-child(9) {
     position: fixed;
-    top: 30px;
-    right: 740px;
+    top: 34em;
+    right: 40em;
     }
     
 a:link {
@@ -73,10 +74,26 @@ a:hover {
   color: #FF0000;
 }   /* mouse over link */
 
+#partners{
+    position:fixed;
+    top:40em;
+    right:30em;
+}
+#admin a{
+    position:fixed;
+    top:0;
+    right:0.2em;
+    color: #3300cc;
+    text-align:center;
+    font-size: 1em;
+    margin-right: 1em;
+    
+}
+
 </style>
 
-<h1 class="home">FILL YOUR SPACE</h1>
-<div class="landmark"><p><%= link_to "PARTNERS", partners_path()%></p></div>
-<p></p><%= link_to ">>>Admin<<<", admin_path()%></p>
+<!--<h1 class="home">FILL YOUR SPACE</h1>-->
+<p id="partners"><%= link_to "PARTNERS", partners_path()%></p>
+<p id="admin"><%= link_to ">>>Admin<<<", admin_path()%></p>
 
 
