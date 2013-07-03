@@ -1,5 +1,7 @@
 <h1>Products</h1>
 
+<div class="right_column">
 <% @categories.each do |cat| %>
 <p> <%= link_to cat.name, products_path(:category_id => cat.id)%></p>
 <% end %>
+</div>

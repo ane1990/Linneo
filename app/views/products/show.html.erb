@@ -2,16 +2,16 @@
 <p><%= @product.description %> </p>
 <div class="image" id="product">
 	<% if @product.image_url_1 != nil %>
-    	<p><%= image_tag("/products/#{@product.image_url_1}")%></p>
+    	<p><%= image_tag("/images/#{@product.image_url_1}")%></p>
     <% end %>
     <% if @product.image_url_2 != nil %>
-    	<p><%= image_tag("/products/#{@product.image_url_2}")%></p>
+    	<p><%= image_tag("/images/#{@product.image_url_2}")%></p>
     <% end %>
     <% if @product.image_url_3 != nil %>
-    	<p><%= image_tag("/products/#{@product.image_url_3}")%></p>
+    	<p><%= image_tag("/images/#{@product.image_url_3}")%></p>
     <% end %>
     <% if @product.image_url_4 != nil %>
-    	<p><%= image_tag("/products/#{@product.image_url_4}")%></p>
+    	<p><%= image_tag("/images/#{@product.image_url_4}")%></p>
     <% end %>
                 
 </div>

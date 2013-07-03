@@ -1,29 +1,38 @@
+<div class="image" id="designer">
+	<% if @designer.img_path != nil %>
+	<p><%= image_tag("/images/#{@designer.img_path}", :class => "designer")%></p>
+	<%end%>
+</div>
+
 <h1>Designer</h1>
-    
-    <h2><%= @designer.name+" "+@designer.last_name%></h2>
-    
-    <p> <%= @designer.bio %> </p>
-    
-    <div class="image" id="designer">
-    	<% if @designer.img_path != nil %>
-    	<p><%= image_tag("/images/#{@designer.img_path}")%></p>
-    	<%end%>
+
+<h2><%= @designer.name+" "+@designer.last_name%></h2>
+<div class="right_column">
+	<p>
+		<%= @designer.bio %>
+	</p>
+
+	<div class="image">
+		<% if @designer.product_path != nil %>
+		<p>
+			<%= image_tag("/images/#{@designer.product_path}", size: "200x200")%> <%= @designer.product_description %>
+		</p>
+		<%end%>
 	</div>
-	
-	 <div class="image">
-    	<% if @designer.product_path != nil %>
-    	<p><%= image_tag("/images/#{@designer.product_path}")%> <%= @designer.product_description %></p>
-    	<%end%>
-	</div>
-      
-    <% if @designer.previous%>
-      <%= link_to "<< Previous Designer", @designer.previous%>
-    <%end%>
-    
-    <%= link_to "<<Back to All Designers>>", designers_path()%> 
-  
-  	<% if @designer.next%>
-  		<%= link_to "Next Designer>>", @designer.next%>
-  	<%end%>
-    
-    <p><%= link_to "Prodotti del designer", products_path(:designer_id => @designer.id) %></p>
+
+	<% if @designer.previous%>
+	<%= link_to "<< Previous Designer", @designer.previous%>
+	<%end%>
+
+	<%= link_to "<
+	<Back to All Designers>
+		>", designers_path()%>
+
+		<% if @designer.next%>
+		<%= link_to "Next Designer>>", @designer.next%>
+		<%end%>
+
+		<p>
+			<%= link_to "Prodotti del designer", products_path(:designer_id => @designer.id) %>
+		</p>
+</div>
