@@ -1,8 +1,13 @@
-<body class="home">
-    <style>
-    div.landmark{
-        float:left;
+<style type="text/css">
+     body{
+     background-image:url(<%=image_tag('bg.png')%>);
+     background-attachment: fixed;
 }
+
+div.landmark{
+    float:right;
+}
+
     
 
 a:link {
@@ -21,8 +26,9 @@ a:hover {
   color: #FF0000;
 }   /* mouse over link */
 </style>
+
 <h1 class="home">FILL YOUR SPACE</h1>
 <p><%= link_to "PARTNERS", partners_path()%></p>
 <p></p><%= link_to ">>>Admin<<<", admin_path()%></p>
-</body>
+
 
