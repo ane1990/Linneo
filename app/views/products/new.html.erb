@@ -1,42 +1,45 @@
+<div class = "right_column">
+  <table>
 <%= form_for @product do |p|%>
-<p>
-	<%= p.label 'Nome'%>
-	<%= p.text_field :name%>
-</p>
-<p>
-	<%= p.label 'Descrizione'%>
-	<%= p.text_area :description%>
-</p>
-<p>
-	<%= p.label 'Categoria'%>
-	<%= collection_select :product, :category_id, @categories, :id, :name%>
-</p>
-<p>
-	<%= p.label 'Designer'%>
-	<%= collection_select :product, :designer_id, @designers, :id, :last_name%>
-</p>
-<p>
-	<%= p.label 'Tipologia'%>
-	<%= collection_select :product, :type_id, @types, :id, :name%>
-</p>
-<p>
-	<%= p.label 'Immagine 1' %>
-	<%= p.file_field :image_url_1 %>
-</p>
-<p>
-	<%= p.label 'Immagine 2' %>
-	<%= p.file_field :image_url_2 %>
-</p>
-<p>
-	<%= p.label 'Immagine 3' %>
-	<%= p.file_field :image_url_3 %>
-</p>
-<p>
-	<%= p.label 'Immagine 4' %>
-	<%= p.file_field :image_url_4 %>
-</p>
-<p>
-	<%= p.submit %>
-</p>
+<tr>
+	<td width = "35%"><%= p.label 'Nome'%></td>
+	<td width = "65%"><%= p.text_field :name%></td>
+</tr>
+<tr>
+	<td><%= p.label 'Descrizione'%></td>
+	<td><%= p.text_area :description%></td>
+</tr>
+<tr>
+	<td><%= p.label 'Categoria'%></td>
+	<td><%= collection_select :product, :category_id, @categories, :id, :name%></td>
+</tr>
+<tr>
+	<td><%= p.label 'Designer'%></td>
+	<%= collection_select :product, :designer_id, @designers, :id, :last_name%></td>
+</tr>
+<tr>
+	<td><%= p.label 'Tipologia'%></td>
+	<%= collection_select :product, :type_id, @types, :id, :name%></td>
+</tr>
+<tr>
+	<td><%= p.label 'Immagine 1' %></td>
+	<td><%= p.file_field :image_url_1 %></td>
+</tr>
+<tr>
+	<td><%= p.label 'Immagine 2' %></td>
+	<td><%= p.file_field :image_url_2 %></td>
+</tr>
+<tr>
+	<td><%= p.label 'Immagine 3' %></td>
+	<td><%= p.file_field :image_url_3 %></td>
+</tr>
+<tr>
+	<td><%= p.label 'Immagine 4' %></td>
+	<td><%= p.file_field :image_url_4 %></td>
+</tr>
+<tr>
+	<td><%= p.submit %></td>
+</tr>
 <%end%>
-
+</table>
+</div>

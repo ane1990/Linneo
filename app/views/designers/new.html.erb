@@ -1,9 +1,11 @@
 <h1>Nuovo Designer</h1>
-<table class = "tabella">
+
+<div class = "right_column">
+<table>
 <%= form_for @designer do |d|%>
 <tr>
-	<td><%= d.label 'Nome' %></td>
-	<td><%= d.text_field :name %></td>
+	<td width = "35%"><%= d.label 'Nome' %></td>
+	<td width = "65%"><%= d.text_field :name %></td>
 </tr>
 <tr>
 	<td><%= d.label 'Cognome' %></td>
@@ -29,3 +31,5 @@
 	<td><%= d.submit %></td>
 </tr>
      <% end %>
+</table>
+</div>

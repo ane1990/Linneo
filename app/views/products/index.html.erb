@@ -1,20 +1,22 @@
 <h1> Products </h1>
 
 <div class = "right_column">
-	<% @types.each do |t| %>
+<table>
+  <% @types.each do |t| %>
 		<% @products.each do |p| %>
 			<% if p.type_id == t.id then %>
-	 			<h3> <%= t.name %> </h3>
+              <tr><td><h3> <%= t.name %> </h3></td></tr>
 				<% break %>
 			<% end %>
 		<% end %>
 		<% @products.each do |p| %>
 			<% if p.type_id == t.id then %>
-				<p> <%= link_to p.name, product_path(p) %> </p>
+              <tr><td class = "transition"> <%= link_to p.name, product_path(p) %> </td></tr>
 			<% end %>
 		<% end %>
+      <tr><td></td></tr>
 	<% end %>
-	
-<p> <%= link_to "Back to Product Range", categories_path()%></p>
-	
-	</div>
+</table>
+</div>
+
+<p class = "group_link"> <%= link_to "Back to Product Range", categories_path()%></p>
