@@ -9,6 +9,12 @@
     	<p><%= image_tag(@designer.img_path)%></p>
     	<%end%>
 	</div>
+	
+	 <div class="image">
+    	<% if @designer.product_path != nil %>
+    	<p><%= image_tag(@designer.product_path)%> <%= @designer.product_description %></p>
+    	<%end%>
+	</div>
       
     <% if @designer.previous%>
       <%= link_to "<< Previous Designer", @designer.previous%>

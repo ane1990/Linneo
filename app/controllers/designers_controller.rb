@@ -10,4 +10,14 @@ class DesignersController < ApplicationController
       @designer = Designer.find(params[:id])
     end
   end
+  
+  def new 
+    @designer = Designer.new
+  end
+  
+  def create
+    Designer.create(params[:designer])
+    redirect_to admins_path
+  end
+  
 end

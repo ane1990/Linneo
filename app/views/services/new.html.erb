@@ -1,0 +1,17 @@
+<%= form_for @service do |s|%>
+<p>
+    <%= s.label :name%>
+    <%= s.text_field :name%>
+</p>
+<p>
+    <%= s.label :info%>
+    <%= s.text_area :info%>
+</p>
+<p>
+     <%= s.label :faq%>
+     <%= s.text_area :faq%>
+</p>
+<p>
+     <%= s.submit %>
+</p>
+     <%end%>

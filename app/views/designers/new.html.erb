@@ -1,0 +1,17 @@
+<%= form_for @designer do |d|%>
+<p>
+    <%= d.label :name%>
+    <%= d.text_field :name%>
+</p>
+<p>
+    <%= d.label :last_name%>
+    <%= d.text_field :last_name%>
+</p>
+<p>
+     <%= d.label :bio%>
+     <%= d.text_area :bio%>
+</p>
+<p>
+     <%= d.submit %>
+</p>
+     <%end%>
