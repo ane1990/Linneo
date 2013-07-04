@@ -2,6 +2,7 @@
      body {
      background-image:url('/assets/bg.png');
      background-repeat: no-repeat;
+     background-attachment: fixed;
      background-position: center;
 }
 
@@ -69,7 +70,7 @@ div.landmark a:link {
   }    /* unvisited link */
 
 div.landmark a:visited{
-  color:#880000;
+  color:#da0202;
 }
 
 div.landmark a:hover {
@@ -87,8 +88,9 @@ div.landmark a:hover {
     right:0.2em;
     color: #3300cc;
     text-align:center;
-    font-size: 1em;
-    margin-right: 1em;   
+    font-size: 1.5em;
+    margin-right: 1em; 
+    font-weight: bold;  
 }
 
 #partners a{
@@ -99,12 +101,15 @@ div.landmark a:hover {
   text-decoration: none;
 }
 #partners a:visited{
-  color:#880000;
+  color:#da0202;
 }
+
+#partners a:hover {
+  color: #FF0000;
+}   /* mouse over link */
 
 </style>
 
-<!--<h1 class="home">FILL YOUR SPACE</h1>-->
 <p id="partners"><%= link_to "PARTNERS", partners_path()%></p>
 <p id="admin"><%= link_to ">>>Admin<<<", admin_path()%></p>
 
