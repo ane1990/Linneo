@@ -1,45 +1,47 @@
+<h1>Nuovo Prodotto</h1>
+
 <div class = "right_column">
-  <table>
-<%= form_for @product do |p|%>
-<tr>
-	<td width = "35%"><%= p.label 'Nome'%></td>
-	<td width = "65%"><%= p.text_field :name%></td>
-</tr>
-<tr>
-	<td><%= p.label 'Descrizione'%></td>
-	<td><%= p.text_area :description%></td>
-</tr>
-<tr>
-	<td><%= p.label 'Categoria'%></td>
-	<td><%= collection_select :product, :category_id, @categories, :id, :name%></td>
-</tr>
-<tr>
-	<td><%= p.label 'Designer'%></td>
-	<%= collection_select :product, :designer_id, @designers, :id, :last_name%></td>
-</tr>
-<tr>
-	<td><%= p.label 'Tipologia'%></td>
-	<%= collection_select :product, :type_id, @types, :id, :name%></td>
-</tr>
-<tr>
-	<td><%= p.label 'Immagine 1' %></td>
-	<td><%= p.file_field :image_url_1 %></td>
-</tr>
-<tr>
-	<td><%= p.label 'Immagine 2' %></td>
-	<td><%= p.file_field :image_url_2 %></td>
-</tr>
-<tr>
-	<td><%= p.label 'Immagine 3' %></td>
-	<td><%= p.file_field :image_url_3 %></td>
-</tr>
-<tr>
-	<td><%= p.label 'Immagine 4' %></td>
-	<td><%= p.file_field :image_url_4 %></td>
-</tr>
-<tr>
-	<td><%= p.submit %></td>
-</tr>
-<%end%>
+<table>
+	<%= form_for @product do |p|%>
+	<tr>
+		<td><%= p.label 'Nome'%></td>
+		<td><%= p.text_field :name%></td>
+	</tr>
+	<tr>
+		<td><%= p.label 'Descrizione'%></td>
+		<td><%= p.text_area :description%></td>
+	</tr>
+	<tr>
+		<td><%= p.label 'Categoria'%></td>
+		<td><%= collection_select :product, :category_id, @categories, :id, :name%></td>
+	</tr>
+	<tr>
+		<td><%= p.label 'Designer'%></td>
+		<td><%= collection_select :product, :designer_id, @designers, :id, :last_name%></td>
+	</tr>
+	<tr>
+		<td><%= p.label 'Tipologia'%></td>
+		<td><%= collection_select :product, :type_id, @types, :id, :name%></td>
+	</tr>
+	<tr>
+		<td><%= p.label 'Immagine 1' %></td>
+		<td><%= p.file_field :image_url_1 %></td>
+	</tr>
+	<tr>
+		<td><%= p.label 'Immagine 2' %></td>
+		<td><%= p.file_field :image_url_2 %></td>
+	</tr>
+	<tr>
+		<td><%= p.label 'Immagine 3' %></td>
+		<td><%= p.file_field :image_url_3 %></td>
+	</tr>
+	<tr>
+		<td><%= p.label 'Immagine 4' %></td>
+		<td><%= p.file_field :image_url_4 %></td>
+	</tr>
+	<tr>
+		<td><%= p.submit %></td>
+	</tr>
+	<%end%>
 </table>
 </div>

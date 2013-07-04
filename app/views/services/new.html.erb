@@ -1,17 +1,23 @@
-<%= form_for @service do |s|%>
-<p>
-    <%= s.label :name%>
-    <%= s.text_field :name%>
-</p>
-<p>
-    <%= s.label :info%>
-    <%= s.text_area :info%>
-</p>
-<p>
-     <%= s.label :faq%>
-     <%= s.text_area :faq%>
-</p>
-<p>
-     <%= s.submit %>
-</p>
-     <%end%>
+<h1>Nuovo Servizio</h1>
+
+<div class = "right_column">
+<table>
+	<%= form_for @service do |s|%>
+	<tr>
+    	<td><%= s.label :name%></td>
+    	<td><%= s.text_field :name%></td>
+    </tr>
+    <tr>
+    	<td><%= s.label :info%></td>
+    	<td><%= s.text_area :info%></td>
+    </tr>
+    <tr>
+    	<td><%= s.label "FAQ"%></td>
+    	<td><%= s.text_area :faq%></td>
+     </tr>
+     <tr>
+     	<td><%= s.submit %></td>
+	</tr>
+	<%end%>
+	</table>
+</div>

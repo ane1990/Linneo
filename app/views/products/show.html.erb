@@ -1,36 +1,58 @@
 <h1>Products</h1>
 
-<h2> <%=@product.name%> </h2>
+<h2><%= @product.name%></h2>
 
 <div class="right_column">
-<p><%= @product.description %> </p>
-<div class="image" id="product">
-	<% if @product.image_url_1 != nil %>
-    	<p><%= image_tag("/images/#{@product.image_url_1}")%></p>
-    <% end %>
-    <% if @product.image_url_2 != nil %>
-    	<p><%= image_tag("/images/#{@product.image_url_2}")%></p>
-    <% end %>
-    <% if @product.image_url_3 != nil %>
-    	<p><%= image_tag("/images/#{@product.image_url_3}")%></p>
-    <% end %>
-    <% if @product.image_url_4 != nil %>
-    	<p><%= image_tag("/images/#{@product.image_url_4}")%></p>
-    <% end %>
-                
-</div>
-<div><% @services.each do |s| %>
-    <p><%= link_to s.name, service_path(s)%></p>
-    <%end%>
-    <p>Designer: <%= link_to @designer.name+" "+@designer.last_name, designer_path(:designer_id => @product.designer_id)%></p>
-    <%if @product.next(@product.category_id)%>
-    <p> <%= link_to "Next Product with the same category", @product.next(@product.category_id)%></p>
-    <% end %>
-    <p> <%= link_to "Back to Category Products", products_path(:category_id => @product.category_id)%></p>
-     <%if @product.prev(@product.category_id)%>
-    <p> <%= link_to "Previous Product with the same category", @product.prev(@product.category_id)%></p>
-    <%end%>
-   </div>
+	<p>
+		<%= @product.description %>
+	</p>
+
+	<div align = "right">
+		<p> 
+			<% if @product.image_url_1 != nil %>
+				<%= image_tag("/images/#{@product.image_url_1}", :class => "product_image")%>
+			<% end %>
+
+			<% if @product.image_url_2 != nil %>
+				<%= image_tag("/images/#{@product.image_url_2}", :class => "product_image")%>
+			<% end %> 
+		</p>
+
+		<p> 
+			<% if @product.image_url_3 != nil %>
+				<%= image_tag("/images/#{@product.image_url_3}", :class => "product_image")%>
+			<% end %>
+
+			<% if @product.image_url_4 != nil %>
+				<%= image_tag("/images/#{@product.image_url_4}", :class => "product_image")%>
+			<% end %> 
+		</p>
+	</div>
+
+	<div>
+		<h3>Designer</h3> 
+		<p class = "transition">
+			<%= link_to @designer.name+" "+@designer.last_name, designer_path(:designer_id => @product.designer_id)%>
+		</p>
+
+		<h3>Servizi</h3>
+		<% @services.each do |s| %>
+			<p class = "transition">
+				<%= link_to s.name, service_path(s)%>
+			</p>
+		<%end%>
+	</div>	
+	
+		<span class = "group_link"> 
+			<%if @product.next(@product.category_id)%>
+				<%= link_to "Next Category Product>>", @product.next(@product.category_id)%>
+			<% end %> 
+			<%= link_to "<<Back to Category Products>>", products_path(:category_id => @product.category_id)%>
+			<%if @product.prev(@product.category_id)%>
+				<%= link_to "<<Previous Category Product", @product.prev(@product.category_id)%>
+			<%end%>
+		</span>
+	</div>
 
 </div>
 

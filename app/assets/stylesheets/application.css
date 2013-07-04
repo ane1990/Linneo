@@ -32,16 +32,14 @@ h2 {
     position: relative;
     left: 1.5em;
     top: 2em;
-	
 }
 
-
-div.landmark{
+div.landmark {
 	margin-left: 0.5em;
     float: left;
 }
 
-div.right_column{
+div.right_column {
     height: 24em;
     position: absolute;
     top: 12.5em;
@@ -55,48 +53,49 @@ div.right_column{
 	margin-top: 1em;
 	font-size: 1.3em;
 	color: #333333;
-	float: left;
+	text-align: left;
 	text-decoration: none;
 }
 
-.transition a:visited{
+.transition a:visited {
 	color: #333333;
 }
 
 .transition a:hover {
   color: #666666;
-  }   /* mouse over link */
+}
 
 .group_link a:link {
 	font-size: 1.1em;
 	color: #333333;
 	float: right;
 	text-decoration: none;
-	margin-top: 1.8em;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
-.group_link a:visited{
+.group_link a:visited {
   color: #333333;
 }
 
 .group_link a:hover {
   color: #666666;
-  }   /* mouse over link */
+}
  
 .landmark a:link {
   font-size: 1.7em;
   font-weight: bold;
   color: #000000;
   text-decoration: none;
-  }    /* unvisited link */
+}
 
-.landmark a:visited{
+.landmark a:visited {
   color: #000000;
 }
 
 .landmark a:hover {
   color: #666666;
-  }   /* mouse over link */
+}
 
 *.logo {
     float:left;

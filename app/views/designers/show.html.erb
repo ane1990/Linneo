@@ -31,10 +31,12 @@
 	</div>
 	
 	<span class = "transition">
+		<br/>
 		<%= link_to "Prodotti del designer", products_path(:designer_id => @designer.id) %>
 	</span>
 
 	<span class="group_link">
+		<br/>
 		<% if @designer.next%>
 			<%= link_to "Next Designer>>", @designer.next%>
 		<%end%>

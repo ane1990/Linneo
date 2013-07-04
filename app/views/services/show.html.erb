@@ -1,19 +1,27 @@
 <h1> Service </h1>
 
-  <p><h2><%= @service.name %></h2>
-    <%= @service.info %></p>
-  <p><h3>FAQ</h3><%= simple_format(@service.faq) %></p>
-  
- 
-  <% if @service.previous%>
-      <%= link_to "<< Previous Service", @service.previous%>
-  <%end%>
+<h2><%= @service.name %></h2>
+
+<div class = "right_column"> 
+	<p><%= @service.info %></p>
+  	<h3>FAQ</h3>
+  	<p><%= simple_format(@service.faq) %></p>
+  	
+<span class = "transition">
+  	<%= link_to "Prodotti per cui è disponibile", products_path(:service_id => @service.id)%>
+</span>
+
+<span class="group_link">
+  	<% if @service.next%>
+  		<%= link_to "Next Service>>", @service.next%>
+  	<%end%>
     <%= link_to "<<Back to All Services>>", services_path()%> 
-  <% if @service.next%>
-  <%= link_to "Next Service>>", @service.next%>
-  <%end%>
+	<% if @service.previous%>
+    	<%= link_to "<< Previous Service", @service.previous%>
+    <%end%>
+</span>
+</div>
   
-  <%= link_to "Prodotti per cui è disponibile", products_path(:service_id => @service.id)%>
 
 
    

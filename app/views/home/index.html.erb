@@ -18,42 +18,49 @@ div.landmark {
     top: 7em;
     right: 27em;
     }
+    
     /*Product*/
     p:nth-child(3) {
     position: fixed;
     top: 11em;
     right: 33em;
     }
+    
     /*Styles*/
     p:nth-child(4) {
     position: fixed;
     top: 14em;
     right: 20em;
     }
+    
     /*Designers*/
     p:nth-child(5) {
     position: fixed;
     top: 17em;
     right: 31em;
     }
+    
     /*Services*/
     p:nth-child(6) {
     position: fixed;
     top: 22em;
     right: 19em;
     }
+    
     /*Events*/
     p:nth-child(7) {
     position: fixed;
     top: 22em;
     right: 37em;
     }
+    
     /*Showroom*/
     p:nth-child(8) {
     position: fixed;
     top: 28em;
     right:19em;
     }
+    
     /*Retailers*/
     p:nth-child(9) {
     position: fixed;
@@ -65,52 +72,60 @@ div.landmark a:link {
   font-family:arial;
   font-size: 2em;
   font-weight: bold;
-  color: #da0202;
+  color: #990000;
   text-decoration: none;
-  }    /* unvisited link */
+  }
 
-div.landmark a:visited{
-  color:#da0202;
+div.landmark a:visited {
+  color: #990000;
 }
 
 div.landmark a:hover {
   color: #FF0000;
-}   /* mouse over link */
+}
 
-#partners{
+#partners {
     position:fixed;
     top:35em;
     right:27em;
 }
-#admin a{
+
+#admin a {
     position:fixed;
     top:0;
     right:0.2em;
-    color: #3300cc;
+    color: #000066;
     text-align:center;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-right: 1em; 
     font-weight: bold;  
 }
 
-#partners a{
+#admin a:visited {
+  color: #000066;
+}
+
+#admin a:hover {
+  color: #0033cc;
+}
+
+#partners a {
   font-family:arial;
   font-size: 2em;
   font-weight: bold;
-  color: #da0202;
+  color: #990000;
   text-decoration: none;
 }
-#partners a:visited{
-  color:#da0202;
+
+#partners a:visited {
+  color: #990000;
 }
 
 #partners a:hover {
   color: #FF0000;
-}   /* mouse over link */
+}
 
 </style>
 
 <p id="partners"><%= link_to "PARTNERS", partners_path()%></p>
 <p id="admin"><%= link_to ">>>Admin<<<", admin_path()%></p>
-
-
